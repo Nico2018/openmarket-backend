@@ -4,11 +4,11 @@ import (
 	"fmt"
 	"log"
 	"net/http"
-//	"os"
+	//	"os"
 
-	"github.com/gin-gonic/gin"
 	"github.com/Nico2018/openmarket-backend/internal/config"
 	"github.com/Nico2018/openmarket-backend/internal/routes"
+	"github.com/gin-gonic/gin"
 )
 
 func main() {
@@ -48,4 +48,3 @@ func main() {
 		log.Fatalf("Failed to start server: %v", err)
 	}
 }
-
