@@ -8,10 +8,10 @@ import (
 // Config represents the application configuration.
 type Config struct {
 	Server struct {
-    Host   string 
-    Port   int    
-    Debug  bool  
-    Secret string
+		Host   string
+		Port   int
+		Debug  bool
+		Secret string
 	}
 }
 
@@ -19,7 +19,7 @@ type Config struct {
 func LoadConfig() (*Config, error) {
 	// Load the configuration from a file, if present
 	viper.SetConfigName("config")
-  viper.SetConfigType("json")
+	viper.SetConfigType("json")
 	viper.AddConfigPath(".")
 	if err := viper.ReadInConfig(); err != nil {
 		if _, ok := err.(viper.ConfigFileNotFoundError); !ok {
@@ -35,4 +35,3 @@ func LoadConfig() (*Config, error) {
 
 	return &cfg, nil
 }
-
