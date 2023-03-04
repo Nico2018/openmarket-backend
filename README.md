@@ -6,5 +6,13 @@ Our vision is to create a world where shopping experiences are seamless, immersi
 
 We envision a metaverse that is accessible to everyone, regardless of their geographical location or socioeconomic background. We believe that the metaverse has the potential to create a more equitable and fair world, where everyone has the opportunity to participate and benefit from the virtual economy. 
 
+# Getting Started
+To begin using this API you first need to run the following in project root folder:
+```sh
+go run ./cmd/app/main.go
+```
+This will download all the needed packages. For futher information about the endpoints more
+docs are pending.
+
 # Disclaimer
 THIS IS JUST FOR FUN
